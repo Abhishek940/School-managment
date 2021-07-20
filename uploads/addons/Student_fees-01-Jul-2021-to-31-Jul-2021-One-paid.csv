@@ -1,0 +1,3 @@
+Invoice-no,Student,Class,Invoice-Title,Total-Amount,Paid-Amount,Creation-Date,Payment-Date,Status
+00000001,"Neha Kumari",One,Fee,$2000,$2000,19-Jul-2021,19-Jul-2021,Paid
+00000002,"Neha Kumari",One,Fee,$2000,$2000,19-Jul-2021,19-Jul-2021,Paid
