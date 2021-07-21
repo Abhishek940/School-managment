@@ -212,30 +212,6 @@ class Home extends CI_Controller {
 		$this->load->view('frontend/'.$this->theme.'/index', $page_data);
 	}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	// ACTIVE SCHOOL ID FOR FRONTEND
 	function active_school_id_for_frontend($active_school_id) {
 		if (addon_status('multi-school')) {

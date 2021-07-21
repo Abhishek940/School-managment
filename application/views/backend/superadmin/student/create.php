@@ -26,13 +26,13 @@
                         <span class="d-none d-lg-block"><?php echo get_phrase('bulk_student_admission'); ?></span>
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a href="<?php echo route('student/create/excel'); ?>" class="nav-link rounded-0 <?php if($aria_expand == 'excel') echo 'active'; ?>">
-                        <i class="mdi mdi-settings-outline d-lg-none d-block mr-1"></i>
-                        <span class="d-none d-lg-block"><?php echo get_phrase('excel_upload'); ?></span>
-                    </a>
-                </li>
-            </ul>
+<li class="nav-item">
+<a href="<?php echo route('student/create/excel'); ?>" class="nav-link rounded-0 <?php if($aria_expand == 'excel') echo 'active'; ?>">
+<i class="mdi mdi-settings-outline d-lg-none d-block mr-1"></i>
+<span class="d-none d-lg-block"><?php echo get_phrase('excel_upload'); ?></span>
+</a>
+</li>
+</ul>
 
             <div class="tab-content">
                 <div class="tab-pane active">

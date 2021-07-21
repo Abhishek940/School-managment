@@ -72,19 +72,30 @@ function blankFunction(){
 
 <!-- Right modal content -->
 <div id="right-modal" class="modal fade" role="dialog" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-right">
-    <div class="modal-content modal_height">
+<div class="modal-dialog modal-lg modal-right">
+<div class="modal-content modal_height">
+<div class="modal-header border-1">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+<h4 class="modal-title"></h4>
+</div>
+<div class="modal-body" style="overflow-x:scroll;">
+</div>
+</div>
+</div>
+</div>
 
-      <div class="modal-header border-1">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-        <h4 class="modal-title"></h4>
-      </div>
-      <div class="modal-body" style="overflow-x:scroll;">
-
-      </div>
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
+<div id="excel-modal" class="modal fade" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-lg modal-right">
+<div class="modal-content modal_height">
+<div class="modal-header border-1">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+<h4 class="modal-title"></h4>
+</div>
+<div class="modal-body" style="overflow-x:scroll;">
+</div>
+</div>
+</div>
+</div>
 
 
 <!--  Large Modal -->

@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Paypal | <?php echo get_settings('system_name');?></title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="<?php echo base_url('assets/payment/css/stripe.css');?>"
-          rel="stylesheet">
-  <link name="favicon" type="image/x-icon" href="<?php echo base_url();?>uploads/system/logo/favicon.png" rel="shortcut icon" />
+<title>Paypal | <?php echo get_settings('system_name');?></title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="<?php echo base_url('assets/payment/css/stripe.css');?>"
+rel="stylesheet">
+<link name="favicon" type="image/x-icon" href="<?php echo base_url();?>uploads/system/logo/favicon.png" rel="shortcut icon" />
 </head>
 <body>
 <?php
-    $paypal = json_decode(get_payment_settings('paypal_settings'));
-    $paypal_mode = $paypal[0]->paypal_mode;
-    $paypal_client_id_sandbox = $paypal[0]->paypal_client_id_sandbox;
-    $paypal_client_id_production = $paypal[0]->paypal_client_id_production;
+$paypal = json_decode(get_payment_settings('paypal_settings'));
+$paypal_mode = $paypal[0]->paypal_mode;
+$paypal_client_id_sandbox = $paypal[0]->paypal_client_id_sandbox;
+$paypal_client_id_production = $paypal[0]->paypal_client_id_production;
 ?>
 <!--required for getting the stripe token-->
 
 <img src="<?php echo $this->settings_model->get_logo_light(); ?>" width="15%;"
-     style="opacity: 0.05;">
+style="opacity: 0.05;">
 
 <div class="package-details">
-    <strong><?php echo get_phrase('student_name');?> | <?php echo $user_details['name'];?></strong> <br>
-    <strong><?php echo get_phrase('amount_to_pay');?> | <?php echo currency($amount_to_pay);?></strong> <br>
-    <div id="paypal-button" style="margin-top: 20px;"></div><br>
+<strong><?php echo get_phrase('student_name');?> | <?php echo $user_details['name'];?></strong> <br>
+<strong><?php echo get_phrase('amount_to_pay');?> | <?php echo currency($amount_to_pay);?></strong> <br>
+<div id="paypal-button" style="margin-top: 20px;"></div><br>
 </div>
 
 <img src="https://www.paypalobjects.com/webstatic/i/logo/rebrand/ppcom-white.svg" width="25%;"
-     style="opacity: 0.05;">
+style="opacity: 0.05;">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://www.paypalobjects.com/api/checkout.js"></script>

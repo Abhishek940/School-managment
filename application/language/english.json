@@ -1176,5 +1176,6 @@
     "paid_amount_can_not_get_bigger_than_total_amount": "Paid amount can not get bigger than total amount",
     "invoice_list": "Invoice list",
     "invoice_deleted_successfully": "Invoice deleted successfully",
-    "mismatch_password": "Mismatch password"
+    "mismatch_password": "Mismatch password",
+    "update_book_info": "Update book info"
 }

@@ -1,15 +1,17 @@
 <!-- start page title -->
 <div class="row ">
-    <div class="col-xl-12">
-        <div class="card">
-            <div class="card-body">
-                <h4 class="page-title">
-                    <i class="mdi mdi-database title_icon"></i> <?php echo get_phrase('book'); ?>
-                    <button type="button" class="btn btn-outline-primary btn-rounded alignToTitle" onclick="rightModal('<?php echo site_url('modal/popup/book/create'); ?>', '<?php echo get_phrase('add_book'); ?>')"> <i class="mdi mdi-plus"></i> <?php echo get_phrase('add_book'); ?></button>
-                </h4>
-            </div> <!-- end card body-->
-        </div> <!-- end card -->
-    </div><!-- end col-->
+<div class="col-xl-12">
+<div class="card">
+<div class="card-body">
+<h4 class="page-title">
+<i class="mdi mdi-database title_icon"></i> <?php echo get_phrase('book'); ?>
+<button type="button" class="btn btn-outline-primary btn-rounded alignToTitle" onclick="rightModal('<?php echo site_url('modal/popup/book/create'); ?>', '<?php echo get_phrase('add_book'); ?>')"> <i class="mdi mdi-plus"></i> <?php echo get_phrase('add_book'); ?></button>&nbsp;
+&nbsp;&nbsp;
+<button type="button" class="btn btn-outline-primary btn-rounded alignToTitle" onclick="rightModal('<?php echo site_url('modal/popup/book/create'); ?>', '<?php echo get_phrase('add_book'); ?>')"> <i class="mdi mdi-plus"></i>Excel Upload</button>
+</h4>
+</div> 
+</div>
+</div>
 </div>
 <!-- end page title -->
 
